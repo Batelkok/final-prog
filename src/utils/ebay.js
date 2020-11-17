@@ -41,12 +41,12 @@ d// const EbayAuthToken = require('ebay-oauth-nodejs-client');
 const Ebay = require('ebay-node-api');
 
 let ebay = new Ebay({
-    clientID: 'BatelTab-Finalpro-SBX-f7a727799-b24b5d5a',
-    clientSecret: 'SBX-7a727799fd5c-c7a7-4360-b1f5-4e0e',
+    clientID: '',
+    clientSecret: '',
     body: {
         grant_type: 'client_credentials',
     //you may need to define the oauth scope
-    scope:'https://auth.sandbox.ebay.com/oauth2/authorize?client_id=BatelTab-Finalpro-SBX-f7a727799-b24b5d5a&response_type=code&redirect_uri=Batel_Tabachnik-BatelTab-Finalp-ianqrykg'
+    scope:''
     }
 });
 ebay.getAccessToken().then((data) => {
