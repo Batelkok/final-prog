@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <title>index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+        {{>header}}
+        {{>navigate}} 
+        
+        <div class="row">
+            <div class="side">
+               <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+                    <ul id="myMenu">
+                           <li>
+                                <h3>brand</h3>
+                                <input type="checkbox" id="Samsung" onclick="myFunction()"> Samsung<br>
+                                <input type="checkbox" id="Apple" onclick="myFunction()"> Apple<br>
+                                <input type="checkbox" id="LG" onclick="myFunction()"> LG<br>
+                                <input type="checkbox" id="Google" onclick="myFunction()"> Google<br>
+                                <input type="checkbox" id="Huawei" onclick="myFunction()"> Huawei<br>
+                                <input type="checkbox" id="Xiaomi" onclick="myFunction()"> Xiaomi<br>
+                                <input type="checkbox" id="myCheck" onclick="myFunction()">ONEPLUS
+                            </li>
+                            <li>
+                                <h3>Storage Capacity</h3>
+                                <input type="checkbox" id="32GB" onclick="myFunction()">32GB<br>
+                                <input type="checkbox" id="64GB" onclick="myFunction()">64GB<br>
+                                <input type="checkbox" id="128GB" onclick="myFunction()">128GB<br>
+                                <input type="checkbox" id="256GB" onclick="myFunction()">256GB
+                            </li>
+                            <li>
+                                <h3>Screen size</h3>
+                                <input type="checkbox" id="From-4" onclick="myFunction()">From "4 <br>
+                                <input type="checkbox" id="From-5" onclick="myFunction()">From "5<br>
+                                <input type="checkbox" id="From-6" onclick="myFunction()">From "6
+                            </li>
+                            <li>
+                                <h3>resolution</h3>
+                                <input type="checkbox" id="From-4" onclick="myFunction()">From 1440*720 <br>
+                                <input type="checkbox" id="From-5" onclick="myFunction()">From1560*720<br>
+                                <input type="checkbox" id="From-6" onclick="myFunction()">From 1600*720
+                            </li>
+                    </ul> 
+            </div>
+            <div class="main">main content</div>
+        </div>
+        {{>footer}} 
+        <script src='/js/app.js'></script>
+</body>
+</html>
